@@ -17,7 +17,7 @@ const Navbar = () => {
             />
             </div>
             
-            <h1 className='text-white text-[25px] font-semibold'>Digital HeavyWeights</h1>
+            <h1 className='text-white text-[1rem] font-semibold'>Digital HeavyWeights</h1>
             </div>
 
             <div className='flex flex-grow gap-5 mb-2'>
