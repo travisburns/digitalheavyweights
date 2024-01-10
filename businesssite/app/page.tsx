@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* mobile */}
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/main-bg.webp)"}}>
-            <div className='pl-0 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]'>
+            <div className='pl-0 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px] lg:relative lg:left-[14%]'>
                 <h1 className='text-[2.3rem] text-center text-white font-semibold'>
                   Make anything possible with
                   <span className='text-[2.3rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>
