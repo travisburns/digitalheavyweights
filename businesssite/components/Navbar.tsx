@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20'>
         <div className='flex flex-row gap-3 items-center'>
-            <div className='relative'>
+            <div className='relative  '>
             <Image 
                 src="/horseLogo.jpg"
                 alt="logo"
@@ -17,10 +17,10 @@ const Navbar = () => {
             />
             </div>
             
-            <h1 className='text-white text-[1rem] font-semibold'>Digital HeavyWeights</h1>
+            <h1 className='text-white text-[1rem] font-semibold'>Digital Heavyweights</h1>
             </div>
 
-            <div className='flex flex-grow gap-5 mb-2'>
+            <div className='flex flex-grow gap-5 mb-2 hidden sm:flex sm:flex-grow sm:relative sm:left-[35%]'>
                 {Socials.map((social) => (
 
                     <Image 
