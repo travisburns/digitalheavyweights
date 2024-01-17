@@ -13,8 +13,8 @@ const Navbar = () => {
                 width={40}
                 height={40}
                 className = 'w-full h-full object-contain rounded-full'
-            
             />
+            
             </div>
             
             <h1 className='text-white text-[1rem] font-semibold'>Digital Heavyweights</h1>
