@@ -10,7 +10,7 @@ export default function Home() {
     
 
       <div className='absolute flex bottom-10  z-[20] hidden right-5 flex-col md:hidden gap-5'>
-                  <Link href="/my-skills" className='rounded-[20px] group relative border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+                  <Link href="/our-process" className='rounded-[20px] group relative border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
                       Learn More
                   </Link>
                   <Link href="/my-skills" className='rounded-[20px] group relative border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
@@ -18,10 +18,10 @@ export default function Home() {
                       Contact Me
                   </Link>
 
-                  <Link href="/my-skills" className='rounded-[20px] group-relative border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
+                  {/* <Link href="/my-skills" className='rounded-[20px] group-relative border border-white px-5 py-3 text-lg text-white max-w-[200px]'>
                       <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20' />
                       Contact Me
-                  </Link>
+                  </Link> */}
 
                 </div>
 
@@ -39,8 +39,11 @@ export default function Home() {
          
         </div>
 
+        
+
 
         <div className='absolute bottom-0 z-[5] w-full h-auto'>
+          
           <Image 
             src="/trees.webp"
             alt="trees"
@@ -49,6 +52,8 @@ export default function Home() {
             className='w-full h-full'
           />
         </div>
+        
+
         <Image
             src="/stars.png"
             alt='stars'
@@ -57,8 +62,9 @@ export default function Home() {
             className='absolute top-10'
           />
 
+       
 
-
+        
 
 
       {/* mobile */}
@@ -74,23 +80,30 @@ export default function Home() {
                 <p className=' text-center text-[.68rem] md:text-[1rem] font-bold text-white  md:block 2xl:text-[1.5rem]'>
                   Aspiring to Create web Applications That Excell
                 </p>
-                <div className='flex md:flex-row  md:flex gap-2 text-[1rem]  text-center relative left-10 w-20  sm:top-24 sm:left-48 md:w-[18rem] md:left-[31%] 2xl:left-[30%]'>
-                  <Link href="/ourProcess" className='rounded-[15px] text-center  bg-transparent border border-white px-4 py-3 sm:my-6 w-[100%] sm:pr-4  text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]'>
-                      Learn More
+                <div className='flex md:flex-row  md:flex gap-2 text-[1rem]  text-center relative left-10 w-20   sm:top-24 sm:left-48 md:w-[18rem] md:left-[31%] 2xl:left-[30%]'>
+                 
+
+                  <Link href="/our-process" className="rounded-[15px] text-center  bg-transparent border border-white px-4 mr-8 py-3 sm:my-6 w-[100%] sm:pr-4  text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]">
+                  <div className='absolute rounded-[20px] z-[1] text-center bg-white inset-0 opacity-0 group-hover:opacity-20' />
+                  Our Process
                   </Link>
 
-                  <Link href="/technology" className='rounded-[15px] text-center bg-transparent border border-white px-4 py-3  sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]'>
+
+                  {/* <Link href="/technology" className='rounded-[15px] text-center bg-transparent border border-white px-4 py-3  sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]'>
                       <div className='absolute rounded-[20px] z-[1] text-center bg-white inset-0 opacity-0 group-hover:opacity-20' />
                       Our Tech
-                  </Link>
+                  </Link> */}
 
-                  <Link href="/contact" className='rounded-[15px] bg-transparent border text-center border-white px-4 py-3 sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem] md:text-[1.3rem]'>
+                  {/* <Link href="/contact" className='rounded-[15px] bg-transparent border text-center border-white px-4 py-3 sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem] md:text-[1.3rem]'>
                       <div className='absolute rounded-[20px] z-[1] bg-white inset-0  text-center opacity-0 group-hover:opacity-20' />
                       Contact Us
-                  </Link>
+                  </Link> */}
 
                 </div>
+               
             </div>
+
+           
       </div>
 
 
