@@ -69,8 +69,8 @@ export default function Home() {
 
       {/* mobile */}
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/main-bg.webp)"}}>
-            <div className='pl-0 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px] lg:relative  lg:left-[12%] xl:left-[21%] 2xl:left-[26%]'>
-                <h1 className='text-[2.3rem] text-center text-white font-semibold 2xl:text-[4rem]'>
+            <div className='pl-0 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px] lg:relative  lg:left-[12%] xl:left-[21%] 2xl:left-[30%]'>
+                <h1 className='text-[2.3rem] relative  text-center text-white font-semibold 2xl:text-[4rem]'>
                   Make anything possible with
                   <span className='text-[2.3rem] 2xl:text-[4rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500'>
                     {" "}
@@ -83,7 +83,7 @@ export default function Home() {
                 <div className='flex md:flex-row  md:flex gap-2 text-[1rem]  text-center relative left-10 w-20   sm:top-24 sm:left-48 md:w-[18rem] md:left-[31%] 2xl:left-[30%]'>
                  
 
-                  <Link href="/our-process" className="rounded-[15px] text-center  bg-transparent border border-white px-4 mr-8 py-3 sm:my-6 w-[100%] sm:pr-4  text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]">
+                  <Link href="/our-process" className="rounded-[15px] text-center  bg-transparent border border-white px-4 relative left-[9.4rem] py-3 sm:my-6 w-[100%] sm:pr-4  text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]">
                   <div className='absolute rounded-[20px] z-[1] text-center bg-white inset-0 opacity-0 group-hover:opacity-20' />
                   Our Process
                   </Link>
