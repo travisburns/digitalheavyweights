@@ -80,24 +80,29 @@ export default function Home() {
                 <p className=' text-center text-[.68rem] md:text-[1rem] font-bold text-white  md:block 2xl:text-[1.5rem]'>
                   Aspiring to Create web Applications That Excell
                 </p>
-                <div className='flex md:flex-row  md:flex gap-2 text-[1rem]  text-center relative left-10 w-20   sm:top-24 sm:left-48 md:w-[18rem] md:left-[31%] 2xl:left-[30%]'>
+                <div className='flex md:flex-row relative top-[1.2rem] md:flex justify-center '>
                  
 
-                  <Link href="/our-process" className="rounded-[15px] text-center  bg-transparent border border-white px-4 relative left-[9.4rem] py-3 sm:my-6 w-[100%] sm:pr-4  text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]">
-                  <div className='absolute rounded-[20px] z-[1] text-center bg-white inset-0 opacity-0 group-hover:opacity-20' />
-                  Our Process
-                  </Link>
+                <div className="rounded border-2 border-white-500 ">
+                 <Link href="/our-process">
+                 <h2 className="text-white sm:text-[1.5rem]">Our Process</h2>
+                 </Link>
+                 </div>
+                 
+                 <div className="rounded border-2 border-white-500">
+                 <Link href="/our-process">
+                 <h2 className="text-white sm:text-[1.5rem]">Our Tech</h2>
+                 </Link>
+                 </div>
+
+                 <div className="rounded border-2 border-white-500">
+                 <Link href="/our-process">
+                 <h2 className="text-white sm:text-[1.5rem]">Contact Us</h2>
+                 </Link>
+                 </div>
 
 
-                  {/* <Link href="/technology" className='rounded-[15px] text-center bg-transparent border border-white px-4 py-3  sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem]'>
-                      <div className='absolute rounded-[20px] z-[1] text-center bg-white inset-0 opacity-0 group-hover:opacity-20' />
-                      Our Tech
-                  </Link> */}
 
-                  {/* <Link href="/contact" className='rounded-[15px] bg-transparent border text-center border-white px-4 py-3 sm:my-6 w-[100%] sm:pr-4 text-sm sm:text-[1.5rem] text-white max-w-[70px] md:pr-[5rem] md:text-[1.3rem]'>
-                      <div className='absolute rounded-[20px] z-[1] bg-white inset-0  text-center opacity-0 group-hover:opacity-20' />
-                      Contact Us
-                  </Link> */}
 
                 </div>
                
