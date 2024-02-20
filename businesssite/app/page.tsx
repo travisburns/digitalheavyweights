@@ -22,7 +22,7 @@ export default function Home() {
                       <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20' />
                       Contact Me
                   </Link> */}
-
+                  <p>Test</p>
                 </div>
 
         <div className='absolute bottom-0 right-0 z-[10] '>
