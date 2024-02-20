@@ -1,50 +1,33 @@
 import React from 'react'
 import Image from 'next/image'
 
-const InfoCard = () => {
+interface InfoCardProps {
+    title: string;
+    description: string;
+    imageSrc: string;
+}
+
+
+const InfoCard: React.FC<InfoCardProps> = ({ title, description, imageSrc }) => {
   
     return (
-       <>
-       <a href="#" className="  bg-slate-950 border border-gray-200 h-[24rem]  shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 relative top-[3rem]">
-        <img src='' />
+        
+       <div className='bg-slate-950 mb-5'>
+       <a href="#" className="bg-slate-950 border border-gray-200   shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 relative ">
+       
     <div className="flex flex-col justify-between">
-        <h5 className="mb-2 text-[1rem] font-bold tracking-tight text-white dark:text-white">30 Minute Consultation with Client</h5>
-        <p className=" font-normal text-white dark:text-gray-400">Within our consultation, we will meet and greet with the client, undesrtand project requirements, and explain our process.</p>
+        <div className='flex'>
+        <img className='h-[15%] w-[15%] relative bottom-[1rem]' src={imageSrc} />
+        <h5 className="mb-2 text-[1rem] font-bold tracking-tight text-white dark:text-white">{title}</h5>
+        </div>
         
-        <ul className='list pt-[2rem] text-white'>
-        <li className='list-item'>
-        <img src=''/>
-        <p className='step'>Meet and Great</p>
-        </li>
+        <p className=" font-normal text-white dark:text-gray-400">{description}</p>
 
-        <li className='list-item'>
-        <img src=''/>
-        <p className='step'>Understand Project scope</p>
-        </li>
-
-        <li className='item flex '>
-        <Image 
-                src="/RequirementsIcon.png"
-                alt="logo"
-                width={60}
-                height={60}
-                className = ''
-            />
-        <p className='step relative top-4'>Determine Requirements</p>
-        </li>
-
-        <li className='list-item'>
-        <img src=''/>
-        <p className='step'>Explain Process and Timeline</p>
-        </li>
-
-        </ul>
-        
     
     </div>
 </a>
-       </>
-    
+       <div/>
+    </div>
   )
 }
 
