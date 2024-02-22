@@ -29,7 +29,7 @@ const Navigation = () => {
   return (
     <div
      
-      className="absolute z-[50] bottom-1 w-[70%] w-full max-h-[3rem] rounded-[1rem] flex justify-between items-center border bg-black border-white px-2 py-[1rem] md:flex-col md:w-[7%] md:max-h-[15rem]  md:px-1 md:left-[0%] md:rounded-none md:border-none md:bg-transparent md:py-0 md:top-[5rem] lg:top-[8rem] lg:max-h-[18rem]"
+      className="absolute z-[50]  w-[70%] w-full max-h-[3rem] rounded-[1rem] flex justify-between items-center border bg-black border-white px-2 py-[1rem] md:flex-col md:w-[7%] md:max-h-[15rem]  md:px-1 md:left-[0%] md:rounded-none md:border-none md:bg-transparent md:py-0 md:top-[5rem] lg:top-[8rem] lg:max-h-[18rem]"
       
     >
 

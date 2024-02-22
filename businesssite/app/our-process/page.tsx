@@ -17,37 +17,42 @@ const Page = () => {
             We strive for professionalism by using the latest Technologies for your Web Application.
           </p>
     
-   
+          
 
           <InfoCard 
           title="30 Minunte Consultation Call"
           description="Within our consultation, we will meet and greet with the client, undesrtand project requirements, and explain our process."
           imageSrc="/phoneIcon.png"
           />
+
          <InfoCard 
           title="Design the UI/UX of website"
           description="We will begin to design to UI/UX using wireframing tools and or development."
           imageSrc="/designIcon.png"
           />
+
           <InfoCard 
           title="Create the front end of the website"
           description="We will create the front end of the website using React and JSX. "
           imageSrc="/programmingIcon.png"
           />
+
            <InfoCard 
           title="Create the backend of the website and database"
           description="We will create the Database and backend process for more advanced sites. "
           imageSrc="/database.png"
           />
+
            <InfoCard 
           title="Optimize SEO"
           description="by use of NextJs metadata, we will Optimize SEO."
-          imageSrc="/database.png"
+          imageSrc="/seoIcon.png"
           />
+
           <InfoCard 
           title="Advanced: Create Custom Eccomerce Dashboard"
           description="For business's in need of advanced sales tracking, we will create a custom Eccomerce Dashboard for all needs."
-          imageSrc="/database.png"
+          imageSrc="/eccomerceIcon.png"
           />
           
         </div>
