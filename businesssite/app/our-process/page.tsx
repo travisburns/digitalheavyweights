@@ -1,7 +1,7 @@
 "use client";
 
 import InfoCard from "@/components/InfoCard";
-
+import Image from "next/image";
 const Page = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-cover bg-center" style={{backgroundImage: "url(/bg-2.jpg)"}}>
@@ -13,16 +13,25 @@ const Page = () => {
               Process
             </span>
           </h1>
+          <Image
+            src="/stars.png"
+            alt='stars'
+            height={300}
+            width={300}
+            className='absolute top-[7rem] left-[10rem]'
+          />
           <p className="text-gray-400 text-[20px]">
             We strive for professionalism by using the latest Technologies for your Web Application.
           </p>
     
           
-
-          <InfoCard 
+          <div className="">
+            <div className="lg:flex">
+            <InfoCard 
           title="30 Minunte Consultation Call"
           description="Within our consultation, we will meet and greet with the client, undesrtand project requirements, and explain our process."
           imageSrc="/phoneIcon.png"
+          
           />
 
          <InfoCard 
@@ -36,8 +45,10 @@ const Page = () => {
           description="We will create the front end of the website using React and JSX. "
           imageSrc="/programmingIcon.png"
           />
-
-           <InfoCard 
+            </div>
+          
+        <div className="lg:flex">
+        <InfoCard 
           title="Create the backend of the website and database"
           description="We will create the Database and backend process for more advanced sites. "
           imageSrc="/database.png"
@@ -54,6 +65,10 @@ const Page = () => {
           description="For business's in need of advanced sales tracking, we will create a custom Eccomerce Dashboard for all needs."
           imageSrc="/eccomerceIcon.png"
           />
+        </div>
+          
+          </div>
+          
           
         </div>
       </div>

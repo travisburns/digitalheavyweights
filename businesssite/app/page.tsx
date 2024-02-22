@@ -59,10 +59,10 @@ export default function Home() {
             alt='stars'
             height={300}
             width={300}
-            className='absolute top-10'
+            className='absolute top-[20rem] left-[20rem]'
           />
 
-       
+
 
         
 
