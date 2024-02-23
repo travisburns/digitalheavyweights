@@ -39,7 +39,9 @@ export default function Home() {
          
         </div>
 
-        
+        <div className="absolute bottom-0 ml-[38.5%] text-center z-[15] ">
+               
+        </div>
 
 
         <div className='absolute bottom-0 z-[5] w-full h-auto'>
@@ -68,7 +70,7 @@ export default function Home() {
 
 
       {/* mobile */}
-      <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/main-bg.webp)"}}>
+      <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: "url(/bg-4.png)"}}>
             <div className='pl-0 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px] lg:relative  lg:left-[12%] xl:left-[21%] 2xl:left-[30%]'>
                 <h1 className='text-[2.3rem] relative  text-center text-white font-semibold 2xl:text-[4rem]'>
                   Make anything possible with
