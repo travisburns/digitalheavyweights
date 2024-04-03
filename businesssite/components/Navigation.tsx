@@ -29,13 +29,13 @@ const Navigation = () => {
   return (
     <div
      
-      className="absolute z-[50]  w-[70%] w-full max-h-[3rem] rounded-[1rem] flex justify-between items-center border bg-black border-white px-2 py-[1rem] md:flex-col md:w-[7%] md:max-h-[15rem]  md:px-1 md:left-[0%] md:rounded-none md:border-none md:bg-transparent md:py-0 md:top-[5rem] lg:top-[8rem] lg:max-h-[18rem]"
+      className=" w-[50%] w-full max-h-[3rem] rounded-[1rem] flex justify-between items-center border bg-black border-white px-2 py-[1rem] md:flex-col md:w-[7%] md:max-h-[15rem]  md:px-1 md:left-[0%] md:rounded-none md:border-none md:bg-transparent md:py-0 md:top-[5rem] lg:top-[8rem] lg:max-h-[18rem]"
       
     >
 
       {isRouting  && <Transition />}
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className=" pl-3 sm:pl-10 min-w-[20%] w-[71%] md:pl-1">
+        <Link key={nav.name} href={nav.link} className=" pl-3 sm:pl-10 min-w-[20%] w-[100%] md:pl-1">
           <div className="left-[15rem]">
           <nav.icon
             className={`w-[24px] h-[24px] md:w-[40px] md:h-[40px] lg:w-[48px] lg:h-[48px] ${

@@ -136,5 +136,41 @@ export const NavLinks = [
     icon: RxDashboard,
     link: "/my-projects",
   },
+
+  {
+    name: "/Process",
+    icon: RxDashboard,
+    link: "/Process",
+  },
+
+  {
+    name: "/ux",
+    icon: RxDashboard,
+    link: "/ux",
+  },
+
+  {
+    name: "/frontend",
+    icon: RxDashboard,
+    link: "/frontend",
+  },
+
+  {
+    name: "/backend",
+    icon: RxDashboard,
+    link: "/backend",
+  },
+
+  {
+    name: "/seo",
+    icon: RxDashboard,
+    link: "/seo",
+  },
+
+  {
+    name: "/dashboard",
+    icon: RxDashboard,
+    link: "/dashboard",
+  },
   
 ];
