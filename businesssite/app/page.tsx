@@ -8,25 +8,27 @@ export default function Home() {
 
       {/* Bottom right corner elements (horse & cliff) */}
       <div className="absolute bottom-0 right-0 z-10">
+      <div className="absolute bottom-0 right-0 z-9 ">
+          <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+        </div>
+      
         <Image
+        className="relative bottom-[11rem]"
           src="/horse.png"
           alt="horse"
           height={300}
           width={300}
-          className="fixed bottom-right" // Use fixed positioning with bottom-right
+          
         />
-        <div className="fixed bottom-right">
-          <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
-        </div>
-      </div>
+       </div>
 
       {/* Text element in bottom center */}
-      <div className="absolute bottom-0 mx-auto text-center z-15">
+      <div className="absolute bottom-0 mx-auto text-center z-9">
         {/* Add content here */}
       </div>
 
       {/* Trees image at bottom */}
-      <div className="absolute bottom-0 z-5 w-full h-auto">
+      <div className="absolute bottom-0 right-0 z-9">
         <Image src="/trees.webp" alt="trees" width={4000} height={4000} className="fixed bottom-0" />
       </div>
 

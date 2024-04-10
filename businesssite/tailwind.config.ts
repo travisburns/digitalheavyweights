@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       screens: {
         '3xl': '1920px', // Custom 3xl breakpoint
-        '4xl': '2300px'
+        '4xl': '2169px',
+        '5xl': '2400px',
+        '6xl': '3200px'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

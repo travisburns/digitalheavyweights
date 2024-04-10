@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div className="pl-0 mx-2 md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-10 max-w-750 lg:relative lg:left-8 xl:left-[10rem]  2xl:left-[8rem] 3xl:left-[10rem]">
-    <h1 className="text-[2.3rem] relative text-center text-white font-semibold md:text-[2.6rem] 2xl:text-[3.5rem] 3xl:text-[4rem]">
+    <div className="pl-0 mx-2 sm:relative sm:left-[8%] md:left-[0%] md:pl-0 pb-56 md:pb-20 flex flex-col gap-5 z-10 max-w-750 lg:relative lg:left-[2.5%] xl:left-[9.5%]  2xl:left-[4%] 3xl:left-[10%] 4xl:left-[19%] 5xl:left-[20%]">
+    <h1 className="text-[1.3rem] relative text-center text-white font-semibold md:text-[2.6rem] 2xl:text-[3.5rem] 3xl:text-[4rem]">
       Make anything possible with
       <span className="text-2.3rem 2xl:text-4rem text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500"> Web Development </span>
     </h1>
