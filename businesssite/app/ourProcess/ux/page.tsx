@@ -4,9 +4,9 @@ import Image from "next/image";
 const Page2 = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-cover bg-center" style={{backgroundImage: "url(/bg-2.jpg)"}}>
-      <div className="flex max-w-[80%] relative bottom-[10rem]">
-        <div className="">
-          <h1 className="font-semibold text-white text-[40px]">
+      <div className="flex max-w-[80%] relative  lg:bottom-[0rem]">
+        <div className="relative mt-[10rem]">
+          <h1 className="font-semibold text-white text-[40px] my-[10rem] mb-16  xl:mt-[-16rem]">
             Designing the UI/UX{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               of Website
@@ -19,7 +19,7 @@ const Page2 = () => {
             width={300}
             className='absolute top-[7rem] left-[10rem]'
           />
-          <p className="text-gray-400 text-[20px]">
+          <p className="text-gray-400 text-[20px] mb-16">
             Welcome to the UI/UX design stage of your website! This phase is crucial for creating a visually appealing and user-friendly interface. Here's what we'll cover:
           </p>
     

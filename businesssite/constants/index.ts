@@ -113,64 +113,12 @@ export const Projects = [
   },
 ];
 
+
+
+
+
 export const NavLinks = [
-  {
-    name: "/",
-    icon: RxHome,
-    link: "/",
-  },
-  {
-    name: "/my-skills",
-    icon: RxPerson,
-    link: "/my-skills",
-  },
+ 
 
-  {
-    name: "/our-process",
-    icon: RxPerson,
-    link: "/our-process",
-  },
 
-  {
-    name: "/my-projects",
-    icon: RxDashboard,
-    link: "/my-projects",
-  },
-
-  {
-    name: "/Process",
-    icon: RxDashboard,
-    link: "/Process",
-  },
-
-  {
-    name: "/ux",
-    icon: RxDashboard,
-    link: "/ux",
-  },
-
-  {
-    name: "/frontend",
-    icon: RxDashboard,
-    link: "/frontend",
-  },
-
-  {
-    name: "/backend",
-    icon: RxDashboard,
-    link: "/backend",
-  },
-
-  {
-    name: "/seo",
-    icon: RxDashboard,
-    link: "/seo",
-  },
-
-  {
-    name: "/dashboard",
-    icon: RxDashboard,
-    link: "/dashboard",
-  },
-  
 ];

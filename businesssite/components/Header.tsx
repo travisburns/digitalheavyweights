@@ -13,11 +13,12 @@ const Header = () => {
       Aspiring to Create web Applications That Excell
     </p>
     <div className="flex md:flex-row relative top-[1.2rem] text-[1.4rem] text-white md:flex justify-evenly sm:text-[2rem] lg:mt-5 lg:text-[2.8rem] 2xl:text-[3rem] 3xl:text-[3.6rem] 3xl:top-[4rem]">
-      <div className="rounded border-2 border-white-500">
-        <Link href="/our-process">
-          <h2 className=" bg-black bg-opacity-50">Our Process</h2>
+    <div className="rounded border-2 border-white-500">
+        <Link href="/services">
+          <h2 className="bg-black bg-opacity-50">Test</h2>
         </Link>
       </div>
+      
       <div className="rounded border-2 border-white-500">
         <Link href="/my-skills">
           <h2 className="bg-black bg-opacity-50">Our Tech</h2>
@@ -28,6 +29,7 @@ const Header = () => {
           <h2 className="bg-black bg-opacity-50">Contact Us</h2>
         </Link>
       </div>
+     
     </div>
   </div>
   )
