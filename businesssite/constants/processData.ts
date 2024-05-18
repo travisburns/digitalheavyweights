@@ -48,18 +48,18 @@ export const services: Service[] = [
       {
         title: 'User Research',
         description: "We'll conduct thorough user research to understand your target audience, their needs, preferences, and behavior.",
-        imageUrl: '/css.png',
+        imageUrl: '/userresearch.png',
       },
       {
         title: 'Wireframing',
         description: "Our team will create wireframes to outline the layout, structure, and functionality of each page, focusing on usability and user flow.",
-        imageUrl: '/images',
+        imageUrl: '/wireframing.png',
       },
 
       {
         title: 'Visual Design',
         description: "We'll work on the visual aspects of your website, including color schemes, typography, imagery, and overall aesthetics.",
-        imageUrl: '/images',
+        imageUrl: '/visualDesign.png',
       },
     ],
   },
@@ -85,7 +85,7 @@ export const services: Service[] = [
       {
         title: 'Interactivity',
         description: "We'll add interactive elements such as animations, transitions, and user-friendly features to enhance the user experience. (depending on complexity, can integrate 3D animation's)",
-        imageUrl: '/phoneIcon.png',
+        imageUrl: '/interactivityIcon.png',
       },
       // Add more steps as needed
     ],
@@ -100,73 +100,67 @@ export const services: Service[] = [
       {
         title: 'Server-Side Development',
         description: "We'll develop the server-side logic using technologies such as Node.js, Express.js, or other frameworks, depending on your project requirements.",
-        imageUrl: '/css.png',
+        imageUrl: '/serversideicon.png',
       },
       {
         title: 'Database Design',
         description: "Our team will design and set up the database architecture, including creating tables, defining relationships, and optimizing performance.",
-        imageUrl: '/step2.jpg',
+        imageUrl: '/databaseIcon.png',
       },
 
       {
         title: 'API Integration',
         description: "We'll integrate APIs to connect your backend with external services or third-party platforms, enabling seamless data exchange and functionality.",
-        imageUrl: '/step2.jpg',
+        imageUrl: '/API.png',
       },
     ],
   },
 
  
-
   {
     slug: 'seo',
     name: 'SEO',
-    description: "ensure your website ranks well in search engine results and drives organic traffic!",
+    description: "Ensure your website ranks well in search engine results and drives organic traffic!",
     imageUrl: '/seo.png',
     steps: [
+    {
+    title: 'Keyword Research',
+    description: "We'll conduct thorough keyword research to identify relevant and high-traffic keywords for your website's content.",
+    imageUrl: '/keywordResearchIcon.png',
+    },
+    {
+    title: 'On-Page Optimization',
+    description: "Our team will optimize your website's content, meta tags, headers, and URLs to improve search engine visibility.",
+    imageUrl: '/optimizationIcon.png',
+    },
+    {
+    title: 'Link Building',
+    description: "We'll implement link building strategies to acquire high-quality backlinks from authoritative websites, boosting your website's authority.",
+    imageUrl: '/linkBuildingIcon.png',
+    },
+    ],
+    },
+    {
+      slug: 'dashboard',
+      name: 'Dashboard',
+      description: "Creating a custom CMS dashboard for advanced content management and analytics",
+      imageUrl: '/dashboard.png',
+      steps: [
       {
-        title: 'User Research',
-        description: "We'll conduct thorough user research to understand your target audience, their needs, preferences, and behavior.",
-        imageUrl: '/css.png',
+      title: 'Custom CMS Development',
+      description: "We'll develop a custom Content Management System (CMS) using C# on the backend and TypeScript on the frontend, tailored to your specific requirements.",
+      imageUrl: '/customizationIcon.png',
       },
       {
-        title: 'Wireframing',
-        description: "Our team will create wireframes to outline the layout, structure, and functionality of each page, focusing on usability and user flow.",
-        imageUrl: '/images/step2.jpg',
+      title: 'Advanced Analytics',
+      description: "Our team will integrate advanced analytics features into the dashboard, providing valuable insights into user behavior, content performance, and key metrics.",
+      imageUrl: '/advancedAnalytics.png',
       },
-
       {
-        title: 'Visual Design',
-        description: "We'll work on the visual aspects of your website, including color schemes, typography, imagery, and overall aesthetics.",
-        imageUrl: '/images/step2.jpg',
+      title: 'Content Management',
+      description: "The custom CMS will allow you to easily create, edit, and manage your website's content, including pages, blog posts, images, and more.",
+      imageUrl: '/ContentManagment.png',
       },
     ],
-  },
-
-
-  {
-    slug: 'dashboard',
-    name: 'Dashboard',
-    description: " Creating Custom Ecommerce Dashboard for advanced Sales Tracking",
-    imageUrl: '/dashboard.png',
-    steps: [
-      {
-        title: 'Data Visualization',
-        description: "We'll create visually appealing charts, graphs, and reports to provide insights into sales performance, customer behavior, and inventory management.",
-        imageUrl: '/public/css.png',
-      },
-      {
-        title: 'User Management',
-        description: "Our team will implement user authentication, access control, and role-based permissions to ensure secure access to the dashboard features.",
-        imageUrl: '/images/step2.jpg',
-      },
-
-      {
-        title: 'Integration with Ecommerce Platforms',
-        description: "We'll integrate with popular ecommerce platforms such as Shopify, WooCommerce, or Magento to fetch sales data, product information, and order details.",
-        imageUrl: '/images/step2.jpg',
-      },
-    ],
-  },
-  // Add more services as needed
-];
+    },
+    ];

@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
       
       
       <div className='text-white'>
-        <Link href="/services">
+        <Link href="/my-projects">
           My Projects
         </Link>
       </div>
