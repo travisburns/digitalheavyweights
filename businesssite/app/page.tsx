@@ -1,13 +1,13 @@
+// Home.tsx
 "use client";
+
 import Header from "@/components/Header";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen relative"
-    >
+    <div className="w-screen h-screen relative">
       {/* Bottom right corner elements (horse & cliff) */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -15,21 +15,16 @@ export default function Home() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="absolute bottom-0 right-0 z-10"
       >
-        <div className="absolute bottom-0 right-0 z-9">
-          <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+        <div className="absolute bottom-0 right-0 z-9 w-[480px] h-[480px]">
+          <Image src="/cliff.webp" alt="cliff" layout="fill" objectFit="cover" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
+          className="relative bottom-[11rem] w-[300px] h-[300px]"
         >
-          <Image
-            className="relative bottom-[11rem]"
-            src="/horse.png"
-            alt="horse"
-            height={300}
-            width={300}
-          />
+          <Image src="/horse.png" alt="horse" layout="fill" objectFit="contain" />
         </motion.div>
       </motion.div>
 
@@ -48,15 +43,9 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className="absolute bottom-0 right-0 z-9"
+        className="absolute bottom-0 right-0 z-9 w-full h-[400px]"
       >
-        <Image
-          src="/trees.webp"
-          alt="trees"
-          width={4000}
-          height={4000}
-          className="fixed bottom-0"
-        />
+        <Image src="/trees.webp" alt="trees" layout="fill" objectFit="cover" />
       </motion.div>
 
       {/* Stars image */}
@@ -64,14 +53,9 @@ export default function Home() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 1 }}
+        className="absolute top-20 left-20 w-[300px] h-[300px]"
       >
-        <Image
-          src="/stars.png"
-          alt="stars"
-          height={300}
-          width={300}
-          className="absolute top-20 left-20"
-        />
+        <Image src="/stars.png" alt="stars" layout="fill" objectFit="contain" />
       </motion.div>
 
       <div

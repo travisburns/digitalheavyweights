@@ -6,6 +6,20 @@ import "swiper/css";
 import { SkillData } from "@/constants";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
+import { motion, AnimatePresence } from "framer-motion";
+
+const cardVariants = {
+  initial: { y: 50, opacity: 0 },
+  animate: (index) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: index * 0.1, // Adjust the delay factor as needed
+      duration: 0.5,
+      ease: "easeInOut",
+    },
+  }),
+};
 
 const Page = () => {
   return (
@@ -26,7 +40,6 @@ const Page = () => {
             We strive for professionalism by using the latest technologies for your web application.
           </p>
         </div>
-
         <div className="w-full">
           <Swiper
             slidesPerView={5}
@@ -53,7 +66,6 @@ const Page = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
           <Swiper
             slidesPerView={5}
             spaceBetween={40}
@@ -81,28 +93,33 @@ const Page = () => {
             ))}
           </Swiper>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 w-full">
-          {SkillData.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-white shadow-lg rounded-lg p-6 sm:p-8 flex items-center transition duration-300 hover:shadow-xl hover:transform hover:scale-105"
-            >
-              <div className="w-1/3">
-                <Image
-                  src={skill.Image}
-                  alt={skill.name}
-                  width={120}
-                  height={120}
-                  className="mx-auto"
-                />
-              </div>
-              <div className="w-2/3 pl-6 sm:pl-8">
-                <h2 className="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-4">{skill.name}</h2>
-                <p className="text-gray-600 text-base sm:text-lg">{skill.description}</p>
-              </div>
-            </div>
-          ))}
+          <AnimatePresence>
+            {SkillData.map((skill, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-lg p-6 sm:p-8 flex items-center transition duration-300"
+                variants={cardVariants}
+                initial="initial"
+                animate="animate"
+                custom={index} // Pass the index as a custom prop
+              >
+                <div className="w-1/3">
+                  <Image
+                    src={skill.Image}
+                    alt={skill.name}
+                    width={120}
+                    height={120}
+                    className="mx-auto"
+                  />
+                </div>
+                <div className="w-2/3 pl-6 sm:pl-8">
+                  <h2 className="text-2xl sm:text-3xl font-semibold mb-2 sm:mb-4">{skill.name}</h2>
+                  <p className="text-gray-600 text-base sm:text-lg">{skill.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </div>

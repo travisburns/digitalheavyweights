@@ -1,3 +1,4 @@
+import { link } from "fs";
 import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
 export const SkillData = [
   {
@@ -88,17 +89,17 @@ export const SkillData = [
 
 
 export const Socials = [
+  
   {
-    name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
+    name: "LinkedIn",
+    src: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/travis-burns-a7945890/",
+  },  
+  
   {
     name: "Instagram",
-    src: "/discord.svg",
+    src: "/instagram.svg",
+    link: "https://www.instagram.com/digitalheavyweights/",
   },
 ];
 export const Projects = [

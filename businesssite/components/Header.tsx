@@ -1,4 +1,6 @@
+// Header.tsx
 "use client";
+
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -35,15 +37,13 @@ const Header = () => {
           Web Development{' '}
         </motion.span>
       </motion.h1>
-
       <motion.p
         variants={textVariants}
         transition={{ duration: 0.6, delay: 0.6 }}
         className="text-center text-base md:text-xl font-bold text-white md:block 2xl:text-[1.5rem] 3xl:text-[2rem]"
       >
-        Aspiring to Create web Applications That Excell
+        Aspiring to Create web Applications That Excel
       </motion.p>
-
       <motion.div
         initial="hidden"
         animate="visible"
@@ -55,13 +55,11 @@ const Header = () => {
             <h2 className="bg-black bg-opacity-50">Our Process</h2>
           </Link>
         </motion.div>
-
         <motion.div variants={buttonVariants} className="rounded border-2 border-white-500">
           <Link href="/my-skills">
             <h2 className="bg-black bg-opacity-50">Our Tech</h2>
           </Link>
         </motion.div>
-
         <motion.div variants={buttonVariants} className="rounded border-2 border-white-500">
           <Link href="/contact-me">
             <h2 className="bg-black bg-opacity-50">Contact Us</h2>
