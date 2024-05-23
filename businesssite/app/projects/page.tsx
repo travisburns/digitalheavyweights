@@ -19,7 +19,7 @@ export default function Projects() {
       className="min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
     >
-      <div className="max-w-[80%] relative">
+      <div className="max-w-[80%] relative top-[10rem]">
         <div className="relative mb-16">
           <div className="flex flex-col items-center">
             <motion.h1

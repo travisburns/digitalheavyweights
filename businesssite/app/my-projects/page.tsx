@@ -22,7 +22,7 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: 'url(/mountains.jpg)' }}
-      className="w-screen min-h-screen bg-center bg-cover flex items-center justify-center"
+      className="w-screen min-h-screen bg-center bg-cover flex flex-col justify-center py-20" 
     >
       <div className="container mx-auto px-4 py-16">
         <AnimatePresence>
@@ -43,7 +43,7 @@ const Page = () => {
             {projects.map((project: Project, index: number) => (
               <motion.div key={index} variants={cardVariants} initial="initial" animate="animate">
                 <Link href={`/projects/${project.slug}`}>
-                  <div className="mb-1 relative left-[12%] w-[80%] bg-slate-950 relative">
+                  <div className="mb-1 relative left-[12%] w-[80%] bg-slate-950 ">
                     <div className="flex flex-col justify-between">
                       <div className="sm:w-[100%] 2xl:text-[2.5rem]">
                         <Image alt="" width={100} height={100} src={project.imageSrc} layout="responsive" />

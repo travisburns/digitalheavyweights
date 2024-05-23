@@ -24,12 +24,12 @@ const aboutMeData = {
     {
       name: 'Front-end Web Development',
       institution: 'Lane Community College',
-      description: 'Earned a certification in Front-end Web Development, demonstrating proficiency in HTML, CSS, JavaScript, and responsive web design.',
+      description: 'Earned a certification in Front-end Web Development, Courses included html and css, Javascript, Advanced Javascript, Web Design, NodeJS, Webpack, C#, and and intermediate C#',
     },
     {
       name: 'Mobile Application Development',
       institution: 'Lane Community College',
-      description: 'Obtained a certification in Mobile Application Development, showcasing skills in developing cross-platform mobile apps using frameworks such as React Native and Flutter.',
+      description: 'Obtained a certification in Mobile Application Development, showcasing skills in developing cross-platform mobile apps using React Native. Courses Included React native, and Avanced React Native',
     },
   ],
   journey: 'Started the journey as a self-taught programmer by working on small-scale Wix and WordPress sites. Gradually transitioned into full-stack development, focusing on the MERN stack and Next.js. Throughout the years, worked on various projects, including e-commerce websites and web applications, constantly refining skills and expanding knowledge. Collaborated with teams of developers, designers, and stakeholders to deliver high-quality solutions. Actively seeking new challenges and opportunities to grow as a developer while contributing to the success of organizations.',
@@ -57,7 +57,7 @@ export default function AboutMe() {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="min-h-screen bg-gray-100 py-16"
+      className="min-h-screen bg-gray-100 py-16 px-4 sm:px-8" // Added padding for smaller screens
       style={{
         backgroundImage: "url(/bg-2.jpg)",
         backgroundRepeat: "no-repeat",
@@ -65,7 +65,7 @@ export default function AboutMe() {
         backgroundSize: "cover",
       }}
     >
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 pt-20"> {/* Added padding for smaller screens */}
         <motion.h1
           className="text-6xl font-bold mb-8 text-center text-indigo-600"
           variants={itemVariants}

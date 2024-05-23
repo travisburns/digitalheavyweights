@@ -26,7 +26,7 @@ export default function ServiceDetails() {
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
     >
       <div className="flex max-w-[80%] relative lg:bottom-[0rem]">
-        <div className="relative mt-[10rem]">
+        <div className="relative">
           <motion.h1
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

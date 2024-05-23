@@ -25,9 +25,9 @@ const Page = () => {
   return (
     <div
       style={{ backgroundImage: "url(/bg-2.jpg)" }}
-      className="min-h-screen w-screen flex flex-col items-center justify-center bg-cover bg-center py-20"
+      className="min-h-screen w-screen flex flex-col items-center bg-cover bg-center py-20 px-4 sm:px-8"
     >
-      <div className="flex flex-col gap-16 max-w-[1200px] w-full text-center items-center px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col gap-16 max-w-[1200px] w-full text-center items-center px-4 sm:px-8 mt-20">
         <div className="flex flex-col items-center gap-4">
           <h1 className="font-bold text-white text-5xl">
             Skills{" "}

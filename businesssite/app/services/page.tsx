@@ -49,7 +49,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="lg:flex justify-center">
+        <div className="flex flex-wrap justify-center lg:justify-between xl:justify-start">
           {services.map((service: Service, index: number) => (
             <motion.div
               key={service.slug}
@@ -57,7 +57,7 @@ export default function Services() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.2 * index }}
-              className="bg-white rounded-lg shadow-md p-6 mb-6 mr-6 flex items-center max-w-[350px]"
+              className="bg-white rounded-lg shadow-md p-6 mb-6 lg:mb-0 lg:mr-8 lg:mb-9 xl:mr-12 flex items-center lg:w-[calc(50%-2rem)] xl:w-[calc(23.33%-2rem)]"
             >
               <div className="w-20 h-20 rounded-full overflow-hidden mr-4">
                 <Image
