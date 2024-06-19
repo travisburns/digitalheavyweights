@@ -1,7 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import React from "react";
 
-const Page = () => {
+const Contact = () => {
   return (
     <div
       style={{ backgroundImage: "url(bg-3.jpg)" }}
@@ -28,4 +28,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default Contact;
