@@ -55,9 +55,9 @@ export const projects: Project[] = [
       description: 'A mobile application for storing and discovering music',
       imageSrc: '/musefindcover.png',
       skills: ['React Native Expo', 'MongoDB', 'Ngrok', 'Express', 'Node.js', 'Bcrypt', 'JSON Web Tokens (JWT)'],
-      keyProcess: 'Integrated OpenWeatherAPI to fetch and display weather data',
-      keyProcess2: 'Using webpack, created a production build of the project and deployed it to a live server',
-      keyProcess3: 'Integrated an API to fetch location data and dynamically render map elements',
+      keyProcess: 'Implemented secure user registration and authentication using Ngrok for password hashing and salting',
+      keyProcess2: 'Created a personalized music feed with sorting and filtering capabilities',
+      keyProcess3: 'IIntegrated audio playback functionality for a seamless music listening experience',
       goals1: "Develop a user-friendly mobile application for music storage and discovery: Create an intuitive and visually appealing user interface using React Native and Expo, enabling users to easily navigate and interact with the application. Implement smooth transitions and responsive design to enhance the overall user experience.",
       goals2: "Implement secure user registration and authentication: Integrate user registration and login functionality with secure password hashing and salting using Ngrok. Ensure that user data is protected and that only authorized users can access their personal music entries.",
       goals3: "Enable users to create and manage music entries: Provide a seamless interface for users to create music entries by entering track name, artist, genre, and uploading audio files and images. Allow users to edit and delete their music entries as needed.",
@@ -81,6 +81,18 @@ export const projects: Project[] = [
         'Gained experience in implementing search and filtering functionality',
         'Developed skills in error handling and providing user feedback in a mobile app context',
       ],
+
+
+    
+
+
+
+
+
+
+
+
+
       githubLink: 'https://github.com/Mobile-Apps-at-LCC/MuseFind',
     },
     {
