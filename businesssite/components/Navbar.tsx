@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
               />
             </div>
             <h1 className="text-white text-lg md:text-xl font-semibold ml-2">
-              Digital Heavyweights
+              Travis Burns
             </h1>
           </div>
         </Link>
