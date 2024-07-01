@@ -50,19 +50,15 @@ const Header = () => {
         transition={{ staggerChildren: 0.2, delayChildren: 0.8 }}
         className="flex md:flex-row relative top-[1.2rem] text-[1.4rem] text-white md:flex justify-evenly sm:text-[2rem] lg:mt-5 lg:text-[2.8rem] 2xl:text-[3rem] 3xl:text-[3.6rem] 3xl:top-[4rem]"
       >
-        <motion.div variants={buttonVariants} className="rounded border-2 border-white-500">
-          <Link href="/services">
-            <h2 className="bg-black bg-opacity-50">Our Process</h2>
-          </Link>
-        </motion.div>
+        
         <motion.div variants={buttonVariants} className="rounded border-2 border-white-500">
           <Link href="/my-skills">
-            <h2 className="bg-black bg-opacity-50">Our Tech</h2>
+            <h2 className="bg-black bg-opacity-50">My Tech</h2>
           </Link>
         </motion.div>
         <motion.div variants={buttonVariants} className="rounded border-2 border-white-500">
           <Link href="/contact-me">
-            <h2 className="bg-black bg-opacity-50">Contact Us</h2>
+            <h2 className="bg-black bg-opacity-50">Contact Me</h2>
           </Link>
         </motion.div>
       </motion.div>

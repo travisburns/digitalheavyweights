@@ -159,7 +159,7 @@ export const projects: Project[] = [
     'Enhanced error handling and user experience with loading indicators and friendly error messages',
     'Gained experience in third-party library integration and customization'
   ],
-  githubLink: 'https://github.com/username/web-development-portfolio'
+  githubLink: 'https://github.com/travisburns/cs233JSProjects'
 },
 {
   "slug": "cs233-csharp-portfolio",

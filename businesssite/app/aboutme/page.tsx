@@ -16,7 +16,7 @@ const aboutMeData = {
     {
       degree: 'Bachelor of Science in Art and Technology',
       institution: 'University of Oregon',
-      year: '2020',
+      year: '2018',
       description: 'Graduated with a Bachelor of Science in Art and Technology, which provided a solid foundation in design principles, creative problem-solving, and the intersection of art and technology.',
     },
   ],
@@ -24,12 +24,18 @@ const aboutMeData = {
     {
       name: 'Front-end Web Development',
       institution: 'Lane Community College',
-      description: 'Earned a certification in Front-end Web Development, Courses included html and css, Javascript, Advanced Javascript, Web Design, NodeJS, Webpack, C#, and and intermediate C#',
+      description: 'Obtained a 1 year certification in Front-end Web Development, Courses included html and css, Javascript, Advanced Javascript, Web Design, NodeJS, Webpack, C#, and and intermediate C#',
     },
     {
       name: 'Mobile Application Development',
       institution: 'Lane Community College',
-      description: 'Obtained a certification in Mobile Application Development, showcasing skills in developing cross-platform mobile apps using React Native. Courses Included React native, and Avanced React Native',
+      description: 'Obtained a 1 year certification in Mobile Application Development, showcasing skills in developing cross-platform mobile apps using React Native. Courses Included React native, and Avanced React Native',
+    },
+
+    {
+      name: 'Database Management',
+      institution: 'Lane Community College',
+      description: 'In Progress: Completed a 1 year intensive coursework in software development and database management. Gained proficiency in C# programming, object-oriented concepts, and data structures. Acquired skills in relational database design, SQL query development, and entity-relationship modeling. The program also covered big data concepts and software testing methodologies.',
     },
   ],
   journey: 'Started the journey as a self-taught programmer by working on small-scale Wix and WordPress sites. Gradually transitioned into full-stack development, focusing on the MERN stack and Next.js. Throughout the years, worked on various projects, including e-commerce websites and web applications, constantly refining skills and expanding knowledge. Collaborated with teams of developers, designers, and stakeholders to deliver high-quality solutions. Actively seeking new challenges and opportunities to grow as a developer while contributing to the success of organizations.',

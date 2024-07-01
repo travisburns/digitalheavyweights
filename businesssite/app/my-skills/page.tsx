@@ -37,7 +37,7 @@ const Page = () => {
             Technologies
           </h1>
           <p className="text-gray-300 text-xl max-w-[800px]">
-            We strive for professionalism by using the latest technologies for your web application.
+            I strive for professionalism by using the latest technologies for your web application.
           </p>
         </div>
         <div className="w-full">
