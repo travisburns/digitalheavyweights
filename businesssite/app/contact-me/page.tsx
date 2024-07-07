@@ -18,7 +18,7 @@ const Contact = () => {
               Get In Touch
             </h2>
             <p className="mt-4 text-lg text-white">
-              Have a question or want to work together? Fill out the form below and we'll get back to you as soon as possible.
+              Have a question or want to work together? Fill out the form below and I@apos;ll get back to you as soon as possible.
             </p>
           </div>
           <ContactForm />
