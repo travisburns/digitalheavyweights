@@ -21,16 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Check and generate lock file
-        run: |
-          cd businesssite
-          if [ ! -f "package-lock.json" ]; then
-            echo "Lock file not found, generating one"
-            npm install --package-lock-only
-          else
-            echo "Lock file found"
-          fi
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -49,9 +39,7 @@ jobs:
 
       - name: Build with Next.js
         working-directory: businesssite
-        run: |
-          npx next build
-          npx next export
+        run: npx next build
 
       - name: List build output
         run: |
@@ -61,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: businesssite/.next  # or businesssite/out, depending on the build output
+          path: businesssite/out
 
   deploy:
     environment:
