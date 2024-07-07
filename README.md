@@ -55,7 +55,7 @@ The project includes:
 - Global styles
 - Image optimization using Next.js Image component
 
-This README provides an overview of the project's structure, technologies used, and key features demonstrated in the code. It showcases your skills in modern web development using a popular tech stack.
+
 
 ## Key Accomplishments
 * Developed a fully responsive website using Next.js 13, TypeScript, and Tailwind CSS
