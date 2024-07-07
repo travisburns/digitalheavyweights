@@ -18,7 +18,6 @@ A modern, responsive website showcasing web development services and projects, b
 
 3. **Interactive UI Elements**: 
    - Animated page transitions
-   - Flip cards for project showcases
    - Swiper for skill showcase
 
 4. **Custom Components**:
