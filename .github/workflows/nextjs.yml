@@ -24,7 +24,7 @@ jobs:
       - name: Detect package manager
         id: detect-package-manager
         run: |
-          cd businesssite/app
+          cd businesssite
           if [ -f "package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
@@ -51,23 +51,23 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            businesssite/app/.next/cache
+            businesssite/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Install dependencies
-        working-directory: businesssite/app
+        working-directory: businesssite
         run: npm ci
 
       - name: Build with Next.js
-        working-directory: businesssite/app
+        working-directory: businesssite
         run: npx next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: businesssite/app/out
+          path: businesssite/out
 
   deploy:
     environment:
