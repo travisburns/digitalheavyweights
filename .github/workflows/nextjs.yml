@@ -43,11 +43,6 @@ jobs:
           npx next build
           npx next export
 
-      - name: Check businesssite directory contents
-        run: |
-          echo "Contents of businesssite directory:"
-          ls -R businesssite
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
