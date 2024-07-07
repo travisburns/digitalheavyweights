@@ -49,12 +49,19 @@ jobs:
 
       - name: Build with Next.js
         working-directory: businesssite
-        run: npx next build
+        run: |
+          npx next build
+          npx next export
+
+      - name: List build output
+        run: |
+          cd businesssite
+          ls -R
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: businesssite/out
+          path: businesssite/.next  # or businesssite/out, depending on the build output
 
   deploy:
     environment:
