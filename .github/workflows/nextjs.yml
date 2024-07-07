@@ -21,53 +21,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Detect package manager
-        id: detect-package-manager
+      - name: Check and generate lock file
         run: |
-          cd businesssite
-          if [ -f "package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
+          cd digitalheavyweights/businesssite
+          if [ ! -f "package-lock.json" ]; then
+            echo "Lock file not found, generating one"
+            npm install --package-lock-only
           else
-            echo "Unable to find package.json"
-            ls -R .
-            exit 1
+            echo "Lock file found"
           fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: 'npm'
+          cache-dependency-path: digitalheavyweights/businesssite/package-lock.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          path: |
-            businesssite/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
       - name: Install dependencies
-        working-directory: businesssite
+        working-directory: digitalheavyweights/businesssite
         run: npm ci
 
       - name: Build with Next.js
-        working-directory: businesssite
+        working-directory: digitalheavyweights/businesssite
         run: npx next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: businesssite/out
+          path: digitalheavyweights/businesssite/out
 
   deploy:
     environment:
