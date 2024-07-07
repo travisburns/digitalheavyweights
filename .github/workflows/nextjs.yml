@@ -23,7 +23,7 @@ jobs:
 
       - name: Check and generate lock file
         run: |
-          cd digitalheavyweights/businesssite
+          cd businesssite
           if [ ! -f "package-lock.json" ]; then
             echo "Lock file not found, generating one"
             npm install --package-lock-only
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-          cache-dependency-path: digitalheavyweights/businesssite/package-lock.json
+          cache-dependency-path: businesssite/package-lock.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -44,17 +44,17 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        working-directory: digitalheavyweights/businesssite
+        working-directory: businesssite
         run: npm ci
 
       - name: Build with Next.js
-        working-directory: digitalheavyweights/businesssite
+        working-directory: businesssite
         run: npx next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: digitalheavyweights/businesssite/out
+          path: businesssite/out
 
   deploy:
     environment:
