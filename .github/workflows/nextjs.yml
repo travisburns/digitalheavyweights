@@ -37,12 +37,9 @@ jobs:
         working-directory: businesssite
         run: npm ci
 
-      - name: Ensure out directory exists
-        run: mkdir -p businesssite/out
-
       - name: Build with Next.js
         working-directory: businesssite
-        run: npx next build && npx next export -o out
+        run: npx next build
 
       - name: Check out directory contents
         run: ls -R businesssite/out
