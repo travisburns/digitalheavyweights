@@ -24,7 +24,7 @@ export const projects: Project[] = [
       slug: 'interactive-map',
       title: 'InteractiveMap',
       description: 'Fantasy interactive map that displays location data',
-      imageSrc: '/interactiveMapCover.png',
+      imageSrc: '/interactivemapcover.png',
       skills: ['HTML', 'CSS', 'JavaScript', 'leaflet.js', 'chart.js'],
       keyProcess: 'Developed a custom interactive map system using html, css, javascript, leaflet.js and chart.js',
       keyProcess2: 'Using webpack, created a production build of the project and deployed it to a live server',

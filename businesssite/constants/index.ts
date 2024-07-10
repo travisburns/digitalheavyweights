@@ -1,5 +1,4 @@
-import { link } from "fs";
-import { RxHome, RxPerson, RxDashboard, RxClipboard } from "react-icons/rx";
+
 export const SkillData = [
   {
     name: "Html 5",
@@ -92,7 +91,7 @@ export const Socials = [
   
   {
     name: "LinkedIn",
-    src: "/linkedin.svg",
+    src: "/linkedin.png",
     link: "https://www.linkedin.com/in/travis-burns-a7945890/",
   },  
   
