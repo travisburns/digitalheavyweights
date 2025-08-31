@@ -180,8 +180,8 @@ const Portfolio = () => {
               I specialize in building scalable backend systems with ASP.NET and creating responsive frontend experiences with Typescript, React, and NextJS.
             </p>
             <p className="text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed mb-4 md:mb-6">
-              Currently Graduated my Associate's degree in Software Development at <span className="text-teal-400 font-medium">Lane Community College</span> (graduating June 2025) while 
-              holding a Bachelor's in Art and Technology from <span className="text-teal-400 font-medium">University of Oregon</span>. This combination 
+              Currently Graduated my Associates degree in Software Development at <span className="text-teal-400 font-medium">Lane Community College</span> (graduating June 2025) while 
+              holding a Bachelors in Art and Technology from <span className="text-teal-400 font-medium">University of Oregon</span>. This combination 
               gives me both technical depth and creative problem-solving skills.
             </p>
             <p className="text-base md:text-lg lg:text-xl text-slate-300 leading-relaxed mb-4 md:mb-6">
