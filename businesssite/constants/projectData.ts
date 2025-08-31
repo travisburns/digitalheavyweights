@@ -1,23 +1,26 @@
 export const projects = [
   {
-    title: 'MuseFind Music App',
-    description: 'React Native music discovery app with social features, real-time recommendations, and Spotify integration. Built collaborative playlists and user authentication system.',
-    tech: ['React Native', 'Node.js', 'MongoDB', 'Spotify API', 'Express'],
-    github: 'https://github.com/yourusername/musefind',
-    live: 'https://musefind-demo.com'
+    image: '',
+     title: 'Hyenas Food Truck',
+    description: 'Development of a Full Stack Restuarant Food Ordering system',
+    tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'TypeScript', 'React', 'NextJs', 'TailwindCss'],
+    github: 'https://github.com/yourusername/rw-engineering',
+    live: 'https://hyenasfoodtruck.com'
   },
   {
+    image: '',
+    title: 'Anime Info Site',
+    description: 'Anime Site Developed with the intent for beginers to start Anime/Manga',
+    tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'Bootstrap',],
+    github: 'https://github.com/yourusername/rw-engineering',
+    live: 'https://rw-engineering.com'
+  },
+  {
+    image: '',
     title: 'InteractiveMap Analytics',
     description: 'Data visualization platform using Leaflet.js and Chart.js for geographic analytics. Features real-time data processing and custom map overlays.',
     tech: ['React', 'Leaflet.js', 'Chart.js', 'Express', 'PostgreSQL'],
     github: 'https://github.com/yourusername/interactivemap',
     live: 'https://interactive-map-demo.com'
   },
-  {
-    title: 'R&W Engineering Website',
-    description: 'Complete website redesign and development for engineering consultancy. Modern responsive design with CMS integration and contact forms.',
-    tech: ['Next.js 14', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Strapi'],
-    github: 'https://github.com/yourusername/rw-engineering',
-    live: 'https://rw-engineering.com'
-  }
 ];

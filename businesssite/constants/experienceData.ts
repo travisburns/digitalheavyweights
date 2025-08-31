@@ -12,5 +12,12 @@ export const experience = [
     company: 'Lane Community College',
     description: 'Built a peer review platform in a 3-person Agile team with sprint ownership and GitHub workflows. Designed backend architecture using Entity Framework and MySQL, implementing role-based authentication with ASP.NET Identity for Admin, Instructor, and Student roles.',
     tech: ['C#', 'ASP.NET', 'Entity Framework', 'MySQL', 'ASP.NET Identity', 'GitHub']
+  },
+   {
+    period: 'SEP — DEC 2024',
+    title: 'Data Analyst/ Associate Population Health Strategist',
+    company: 'Pacific Source Health Plans',
+    description: 'Built a peer review platform in a 3-person Agile team with sprint ownership and GitHub workflows. Designed backend architecture using Entity Framework and MySQL, implementing role-based authentication with ASP.NET Identity for Admin, Instructor, and Student roles.',
+    tech: ['Excel', 'Tablue', 'Visual Basic',]
   }
 ];
