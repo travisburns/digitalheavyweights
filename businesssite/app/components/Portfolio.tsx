@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react'
 import { motion } from 'framer-motion';
 import { Github, ExternalLink, Mail, Linkedin } from 'lucide-react';
 import { projects } from '../../constants/projectData';
@@ -12,7 +12,9 @@ const Portfolio = () => {
   const navItems = [
     { id: 'about', label: 'ABOUT' },
     { id: 'experience', label: 'EXPERIENCE' },
-    { id: 'projects', label: 'PROJECTS' }
+    { id: 'projects', label: 'PROJECTS' },
+    { id: 'skills', label: 'SKILLS' },
+    { id: 'education', label: 'EDUCATION' }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -31,7 +33,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects'];
+      const sections = ['about', 'experience', 'projects', 'skills', 'education'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -112,8 +114,8 @@ const Portfolio = () => {
             </p>
           </motion.div>
 
-          {/* Navigation - Horizontal on mobile */}
-          <nav className="flex md:block space-x-6 md:space-x-0 md:mb-12 mb-4">
+          {/* Navigation - Horizontal on mobile with smaller text */}
+          <nav className="flex md:block space-x-3 md:space-x-0 md:mb-12 mb-4 overflow-x-auto">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
@@ -121,7 +123,7 @@ const Portfolio = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group flex items-center py-2 md:py-3 text-xs md:text-sm font-medium uppercase tracking-widest transition-all duration-300 ${
+                className={`group flex items-center py-2 md:py-3 text-xs md:text-sm font-medium uppercase tracking-widest transition-all duration-300 whitespace-nowrap ${
                   activeSection === item.id 
                     ? 'text-white' 
                     : 'text-slate-500 hover:text-slate-300'
@@ -170,6 +172,7 @@ const Portfolio = () => {
       <div className="w-full md:ml-auto md:w-1/2 lg:w-3/5 xl:w-2/3 min-h-screen pt-[20vh] md:pt-0 md:p-12 lg:p-24 relative z-10">
         {/* About Section */}
         <section id="about" className="mb-18 p-6 md:p-0">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">About</h2>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -195,6 +198,17 @@ const Portfolio = () => {
 
         {/* Experience Section */}
         <section id="experience" className="mb-18 p-6 md:p-0">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Experience</h2>
+           <a
+              href="/resume.pdf"
+              download="Travis_Burns_Resume.pdf"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-slate-300 hover:text-teal-400 border border-slate-600 hover:border-teal-400 rounded-lg transition-colors duration-300 group"
+            >
+              <svg className="w-4 h-4 mr-2 group-hover:text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Resume
+            </a>
           {experience.map((exp, index) => (
             <motion.div
               key={index}
@@ -232,7 +246,8 @@ const Portfolio = () => {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="p-6 md:p-0">
+        <section id="projects" className="mb-18 p-6 md:p-0">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Projects</h2>
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -278,15 +293,232 @@ const Portfolio = () => {
           ))}
         </section>
 
-        {/* Footer */}
+        {/* Skills Section */}
+        <section id="skills" className="mb-18 p-6 md:p-0">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Skills</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Frontend Skills */}
+              <div className="group transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg">
+                <h3 className="text-xl font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-4">
+                  Frontend Development
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">JavaScript</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">TypeScript</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">React</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Next.js</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">HTML</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">CSS</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Tailwind CSS</span>
+                </div>
+              </div>
+
+              {/* Backend Skills */}
+              <div className="group transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg">
+                <h3 className="text-xl font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-4">
+                  Backend Development
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">C#</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">.NET</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">ASP.NET</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Blazor</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Node.js</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Express</span>
+                </div>
+              </div>
+
+              {/* Database Skills */}
+              <div className="group transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg">
+                <h3 className="text-xl font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-4">
+                  Database & Tools
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">SQL Server</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">MySQL</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">MongoDB</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">SSMS</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Entity Framework</span>
+                </div>
+              </div>
+
+              {/* Development Tools */}
+              <div className="group transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg">
+                <h3 className="text-xl font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-4">
+                  Development Tools
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Git</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">GitHub</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Azure</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">AWS</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Agile</span>
+                  <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Visual Studio</span>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* Education Section - now includes Certifications */}
+        <section id="education" className="p-6 md:p-0">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">Education & Certifications</h2>
+          
+          {/* Education */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="group mb-12 grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg"
+          >
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+                JUN 2025
+              </p>
+            </div>
+            <div className="md:col-span-6">
+              <h3 className="font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-1">
+                AAS, Software Development • Lane Community College
+              </h3>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+                Completed comprehensive coursework in advanced .NET, C#, SQL, Web App Development, System Design, and Agile methodologies. 
+                Graduated with hands-on experience through a 6-month capstone project and 3-month industry internship.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">C#</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">.NET</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">SQL</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Agile</span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="group mb-12 grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg"
+          >
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+                JAN 2018
+              </p>
+            </div>
+            <div className="md:col-span-6">
+              <h3 className="font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-1">
+                Bachelor of Science, Art & Technology • University of Oregon
+              </h3>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+                Interdisciplinary program combining creative design principles with technical implementation. 
+                Developed strong foundation in design thinking, creative problem-solving, and the intersection of art and technology.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Design</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Creative Technology</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Problem Solving</span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Certifications */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="group mb-12 grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg"
+          >
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+                JUN 2025
+              </p>
+            </div>
+            <div className="md:col-span-6">
+              <h3 className="font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-1">
+                Database Management Certification • Lane Community College
+              </h3>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+                Intensive coursework in software development and database management. Gained proficiency in C# programming, 
+                object-oriented concepts, data structures, relational database design, SQL query development, and entity-relationship modeling.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">SQL</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Database Design</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">C#</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Data Structures</span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="group mb-12 grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg"
+          >
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+                JUN 2024
+              </p>
+            </div>
+            <div className="md:col-span-6">
+              <h3 className="font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-1">
+                Front-end Web Development • Lane Community College
+              </h3>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+                Comprehensive certification covering HTML, CSS, JavaScript, Advanced JavaScript, 
+                Web Design, Node.js, Webpack, C#, and Intermediate C# programming.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">HTML</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">CSS</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">JavaScript</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Node.js</span>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="group mb-12 grid grid-cols-1 md:grid-cols-8 gap-4 transition-all duration-300 hover:bg-slate-800/50 hover:shadow-lg p-6 rounded-lg"
+          >
+            <div className="md:col-span-2">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">
+                JUN 2024
+              </p>
+            </div>
+            <div className="md:col-span-6">
+              <h3 className="font-medium text-slate-200 group-hover:text-teal-400 transition-colors duration-300 mb-1">
+                Mobile Application Development • Lane Community College
+              </h3>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+                Specialized certification in cross-platform mobile app development using React Native. 
+                Coursework included React Native fundamentals and Advanced React Native development.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">React Native</span>
+                <span className="px-3 py-1 text-xs bg-teal-400/10 text-teal-300 rounded-full">Mobile Development</span>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+ {/* Footer */}
         <footer className="pt-24 p-6 md:p-0">
-          <p className="text-sm text-slate-500">
-            Loosely designed in <span className="text-slate-400">Figma</span> and coded in{' '}
-            <span className="text-slate-400">Visual Studio Code</span> by yours truly. Built with{' '}
-            <span className="text-slate-400">Next.js</span> and <span className="text-slate-400">Tailwind CSS</span>, 
-            deployed with <span className="text-slate-400">Vercel</span>. All text is set in the{' '}
-            <span className="text-slate-400">Inter</span> typeface.
-          </p>
+         
         </footer>
       </div>
     </div>
