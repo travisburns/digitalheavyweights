@@ -90,27 +90,30 @@ const Portfolio = () => {
       ))}
 
       {/* Fixed Left Sidebar */}
-      <div className="fixed left-0 top-0  w-full md:w-1/2 lg:w-2/5 xl:w-1/3 p-6 md:p-12 flex flex-col justify-between z-40 md:z-50 bg-slate-900 md:bg-transparent">
-        {/* Header */}
-        <div>
+      <div className="fixed left-0 top-0 w-full md:w-1/2 lg:w-2/5 xl:w-1/3 p-4 md:p-12 z-40 md:z-50 bg-slate-900 md:bg-transparent
+                      flex flex-col md:flex-col justify-between
+                      h-auto md:h-screen">
+        {/* Header Section - Flex on mobile */}
+        <div className="flex flex-col md:block">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
+            className="mb-4 md:mb-0"
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 md:mb-4">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-1 md:mb-4">
               Travis Burns
             </h1>
-            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-medium text-teal-400 mb-4 md:mb-6">
+            <h2 className="text-sm md:text-xl lg:text-2xl xl:text-3xl font-medium text-teal-400 mb-2 md:mb-6">
               Full Stack Developer
             </h2>
-            <p className="text-base md:text-lg text-slate-400 leading-relaxed mb-8 md:mb-12 max-w-sm">
+            <p className="text-sm md:text-lg text-slate-400 leading-relaxed mb-4 md:mb-12 max-w-sm hidden md:block">
               I build scalable web applications with modern frontend frameworks and robust .NET backend systems.
             </p>
           </motion.div>
 
-          {/* Navigation */}
-          <nav className="mb-12">
+          {/* Navigation - Horizontal on mobile */}
+          <nav className="flex md:block space-x-6 md:space-x-0 md:mb-12 mb-4">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
@@ -118,13 +121,13 @@ const Portfolio = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`group flex items-center py-3 text-sm font-medium uppercase tracking-widest transition-all duration-300 ${
+                className={`group flex items-center py-2 md:py-3 text-xs md:text-sm font-medium uppercase tracking-widest transition-all duration-300 ${
                   activeSection === item.id 
                     ? 'text-white' 
                     : 'text-slate-500 hover:text-slate-300'
                 }`}
               >
-                <span className={`mr-4 h-px transition-all duration-300 ${
+                <span className={`mr-2 md:mr-4 h-px transition-all duration-300 hidden md:block ${
                   activeSection === item.id 
                     ? 'w-16 bg-white' 
                     : 'w-8 bg-slate-600 group-hover:w-16 group-hover:bg-slate-300'
@@ -135,37 +138,36 @@ const Portfolio = () => {
           </nav>
         </div>
 
-        {/* Social Links */}
+        {/* Social Links - Bottom on mobile */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex space-x-6"
+          className="flex space-x-4 md:space-x-6"
         >
           <a
             href="https://github.com/yourusername"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
-            <Github className="w-6 h-6" />
+            <Github className="w-4 h-4 md:w-6 md:h-6" />
           </a>
           <a
             href="https://linkedin.com/in/yourusername"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
-            <Linkedin className="w-6 h-6" />
+            <Linkedin className="w-4 h-4 md:w-6 md:h-6" />
           </a>
           <a
             href="mailto:travis@example.com"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
-            <Mail className="w-6 h-6" />
+            <Mail className="w-4 h-4 md:w-6 md:h-6" />
           </a>
         </motion.div>
       </div>
 
       {/* Right Content Area */}
-      <div className="w-full md:ml-auto md:w-1/2 lg:w-3/5 xl:w-2/3 min-h-screen pt-[42vh] md:pt-0 md:p-12 lg:p-24 relative z-10">
-    
+      <div className="w-full md:ml-auto md:w-1/2 lg:w-3/5 xl:w-2/3 min-h-screen pt-[20vh] md:pt-0 md:p-12 lg:p-24 relative z-10">
         {/* About Section */}
         <section id="about" className="mb-18 p-6 md:p-0">
           <motion.div
@@ -193,7 +195,6 @@ const Portfolio = () => {
 
         {/* Experience Section */}
         <section id="experience" className="mb-18 p-6 md:p-0">
-            <h2>Experience</h2>
           {experience.map((exp, index) => (
             <motion.div
               key={index}
@@ -232,7 +233,6 @@ const Portfolio = () => {
 
         {/* Projects Section */}
         <section id="projects" className="p-6 md:p-0">
-             <h2>Projects</h2>
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -279,11 +279,16 @@ const Portfolio = () => {
         </section>
 
         {/* Footer */}
-        <footer className="pt-18">
-          
+        <footer className="pt-24 p-6 md:p-0">
+          <p className="text-sm text-slate-500">
+            Loosely designed in <span className="text-slate-400">Figma</span> and coded in{' '}
+            <span className="text-slate-400">Visual Studio Code</span> by yours truly. Built with{' '}
+            <span className="text-slate-400">Next.js</span> and <span className="text-slate-400">Tailwind CSS</span>, 
+            deployed with <span className="text-slate-400">Vercel</span>. All text is set in the{' '}
+            <span className="text-slate-400">Inter</span> typeface.
+          </p>
         </footer>
       </div>
-       
     </div>
   );
 };
