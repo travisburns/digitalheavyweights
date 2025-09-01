@@ -2,11 +2,13 @@ export const projects = [
   {
     image: '',
      title: 'Hyenas Food Truck',
-    description: 'Development of a Full Stack Restuarant Food Ordering system',
+    description: 'Development of a Full Stack Restuarant Food Ordering system - Github is private',
     tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'TypeScript', 'React', 'NextJs', 'TailwindCss'],
     github: '_blank',
     live: 'https://hyenasfoodtruck.com'
   },
+
+
   {
     image: '',
     title: 'Anime Info Site',
@@ -22,5 +24,14 @@ export const projects = [
     tech: ['React', 'Leaflet.js', 'Chart.js', 'Express', 'PostgreSQL'],
     github: 'https://github.com/yourusername/interactivemap',
     live: 'https://interactive-map-demo.com'
+  },
+
+    {
+    image: '',
+     title: 'React Native Music Finder Application',
+    description: 'Development of a simple CRUD music finder application on react native.',
+    tech: ['React Native', 'Expo', 'TypeScript', 'React', 'TailwindCss'],
+    github: '',
+    live: '_blank'
   },
 ];

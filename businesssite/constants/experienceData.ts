@@ -19,5 +19,12 @@ export const experience = [
     company: 'Pacific Source Health Plans',
     description: 'Built a peer review platform in a 3-person Agile team with sprint ownership and GitHub workflows. Designed backend architecture using Entity Framework and MySQL, implementing role-based authentication with ASP.NET Identity for Admin, Instructor, and Student roles.',
     tech: ['Excel', 'Tablue', 'Visual Basic',]
+  },
+   {
+    period: 'MAR 2022 — DEC 2023',
+    title: 'Web Developer',
+    company: 'Freelance',
+    description: 'Built a variety of web applications for client work during this time.',
+    tech: ['html', 'css', 'Javascript', 'Typescript', 'NextJS', 'MongoDB', 'Tailwind']
   }
 ];
