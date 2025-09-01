@@ -4,7 +4,7 @@ export const projects = [
      title: 'Hyenas Food Truck',
     description: 'Development of a Full Stack Restuarant Food Ordering system',
     tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'TypeScript', 'React', 'NextJs', 'TailwindCss'],
-    github: 'https://github.com/yourusername/rw-engineering',
+    github: '_blank',
     live: 'https://hyenasfoodtruck.com'
   },
   {
@@ -12,8 +12,8 @@ export const projects = [
     title: 'Anime Info Site',
     description: 'Anime Site Developed with the intent for beginers to start Anime/Manga',
     tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'Bootstrap',],
-    github: 'https://github.com/yourusername/rw-engineering',
-    live: 'https://rw-engineering.com'
+    github: 'https://github.com/travisburns/Animestart',
+    live: 'http://travis21-001-site3.ltempurl.com/'
   },
   {
     image: '',
