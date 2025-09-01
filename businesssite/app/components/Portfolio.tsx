@@ -148,19 +148,19 @@ const Portfolio = () => {
           className="flex space-x-4 md:space-x-6"
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/travisburns"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
             <Github className="w-4 h-4 md:w-6 md:h-6" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/travisburnscodes/"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
             <Linkedin className="w-4 h-4 md:w-6 md:h-6" />
           </a>
           <a
-            href="mailto:travis@example.com"
+            href="mailto:travisjb0@gmail.com"
             className="text-slate-400 hover:text-teal-400 transition-colors duration-300"
           >
             <Mail className="w-4 h-4 md:w-6 md:h-6" />
