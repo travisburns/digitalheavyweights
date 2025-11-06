@@ -2,7 +2,7 @@ export const projects = [
   {
     image: '',
      title: 'Hyenas Food Truck',
-    description: 'Demo Admin Login for viewing - Login: (Admin@hyenas.com Password: Admin1234!)  full-stack application that handles both in-person and online food orders. It features inventory management, customer data storage, order processing, and business analytics for sales reporting. The system uses a SQL Server database, .NET API backend, and Next.js/React/TypeScript frontend. It streamlines restaurant operations from order creation, menuitem creation, to kitchen management, helping small food businesses improve efficiency and customer service. - Github is private',
+    description: 'Demo Admin Login for viewing - Login: Admin@hyenas.com Password: Admin1234!  full-stack application that handles both in-person and online food orders. It features inventory management, customer data storage, order processing, and business analytics for sales reporting. The system uses a SQL Server database, .NET API backend, and Next.js/React/TypeScript frontend. It streamlines restaurant operations from order creation, menuitem creation, to kitchen management, helping small food businesses improve efficiency and customer service. - Github is private',
     tech: ['SQL Server Managment Studio', 'Asp.Net', 'C#', 'TypeScript', 'React', 'NextJs', 'TailwindCss'],
     github: '_blank',
     live: 'https://hyenasfoodtruck.com'
