@@ -1,5 +1,13 @@
 export const experience = [
   {
+    period: 'JUN 2025 - Current',
+    title: 'Full Stack Software Developer',
+    company: 'Digital Heavy Weights',
+    description:
+      'Developed and improved a REsturant Managment Application for local food trucks and small scaled Resturants, Currently Working on internal Sales CRM improvements.',
+    tech: ['C#', '.Net', 'Sql Server Management Studio', 'Typescript', 'React', 'NextJs']
+  },
+  {
     period: 'APR — JUN 2025',
     title: 'Software Developer Intern',
     company: 'Trifoia',
